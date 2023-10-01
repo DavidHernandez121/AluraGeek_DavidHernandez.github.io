@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="icon" href="imagenes/logillo.svg" type="image/svg">
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_menuAdmin.css">
+</head>
+<body>
+    <head>
+        <section class="head">
+            <a href="index.html"><img class="logo" src="imagenes/Logo.png" alt=""></a>
+            <button class="button-loggin">Menu Administrador</button>
+            <img class="search" src="imagenes/lupa.jpg" alt="">
+        </section>
+    </head>
+    <section class="agregar_producto">
+        <div class="agregar_producto_contenedor">
+            <h2 class="agregar_producto_contenedor_titulo">Agregue un producto</h2>
+            <div class="formcontato-container">
+                <input type="url" placeholder="URL de la imagen" class="agregar_producto_contenedor_URL input" required data-tipo="URL">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formcontato-container">
+                <input type="text" placeholder="Categoria" class="agregar_producto_contenedor_categoria input" required data-tipo="categoria">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formcontato-container">
+                <input type="text" placeholder="Nombre de producto" class="agregar_producto_contenedor_nombre_producto input" required data-tipo="nombre_producto">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formcontato-container">
+                <input type="number" placeholder="Precio" class="agregar_producto_contenedor_precio input" min="1" max="1000000000" required data-tipo="precio">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formcontato-container">
+                <textarea  placeholder="Descripcion" class="agregar_producto_contenedor_descripcion input" required pattern="" data-tipo="Descripcion"></textarea>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            
+            <button class="agregar_producto_contenedor_boton banner_boton">Enviar</button>
+        </div>
+    </section>
+    <section class="quienes_somos">
+        <div class="quienes_somos_contenedor">
+            <div class="quienes_somos_subcontenedor">
+                <div class="quienes_somos_logo">
+                    <img src="imagenes/Logo.png" alt="">
+                </div>
+                <div class="quienes_somos_paginas">
+                    <ul class="quienes_somos_paginas_lista">
+                        <li class="quienes_somos_paginas_lista_items">Quienes somos</li>
+                        <li class="quienes_somos_paginas_lista_items">Politica de privacidad</li>
+                        <li class="quienes_somos_paginas_lista_items">Programa de fidelidad</li>
+                        <li class="quienes_somos_paginas_lista_items">Nuestros Aliados</li>
+                        <li class="quienes_somos_paginas_lista_items">Quiero ser franquiciado</li>
+                        <li class="quienes_somos_paginas_lista_items">Anuncie aqui</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quienes_somos_contacto">
+                <form class="formcontato__form" name="form" >
+                    <h3 class="quienes_somos_contacto_titulo">Hable con nosotros</h3>
+                    <div class="formcontato-container">
+                        <input type="text" placeholder="Nombre" class="quienes_somos_contacto_nombre input" required pattern="[\s\S]{2,50}" data-tipo="nombre">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="formcontato-container">
+                        <textarea class="quienes_somos_contacto_mensaje input" name="" id="" cols="30" rows="10" placeholder="Mensaje" required maxlength="300" minlength="1"  data-tipo="mensaje"></textarea>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <button type="submit" class="quienes_somos_contacto_boton banner_boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </div> 
+    </section>
+    <section class="quienes_somos_footer">
+        <p>Desarrollado por David Hernandez</p>
+        <p>2023</p>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

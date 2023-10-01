@@ -1,0 +1,92 @@
+
+
+.inicio_sesion_contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 10rem 0;
+}
+
+.inicio_sesion_contenedor_titulo{
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    color: #464646;
+}
+
+
+.inicio_sesion_contenedor_usuario{
+    width: 90%;
+    border-radius: 4px;
+    border: 1px;
+    padding: 1rem;
+}
+
+.inicio_sesion_contenedor_contraseña{
+    width: 90%;
+    border-radius: 4px;
+    border: 1px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.inicio_sesion_contenedor_boton{
+    margin-top: 1rem;
+    text-align: center;
+    margin: 1rem auto
+}
+
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+    
+    .inicio_sesion_contenedor{
+        text-align: center;
+    }
+
+    .inicio_sesion_contenedor_usuario{
+        width: 50%;
+    }
+
+    .inicio_sesion_contenedor_contraseña{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1241px)  {
+
+    .inicio_sesion_contenedor{
+        text-align: center;
+    }
+
+    .inicio_sesion_contenedor_usuario{
+        width: 50%;
+    }
+
+    .inicio_sesion_contenedor_contraseña{
+        width: 50%;
+    }
+
+    .quienes_somos_contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .quienes_somos_subcontenedor{
+        display: flex
+
+    }
+
+    .quienes_somos_logo{
+        width: 11rem;
+        height: 3.25rem;
+        padding: 1rem 0;
+    }
+
+    .quienes_somos_contacto{
+        width: 50%;
+    }
+}

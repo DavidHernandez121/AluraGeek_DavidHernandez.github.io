@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="icon" href="imagenes/logillo.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <head>
+        <section class="head">
+            <a href="index.html"><img class="logo" src="imagenes/Logo.png" alt=""></a>
+            <img class="search" src="imagenes/lupa.jpg" alt="">
+        </section>
+    </head>
+    <section class="inicio_sesion">
+        <div class="inicio_sesion_contenedor">
+            <h2 class="inicio_sesion_contenedor_titulo">Inicio sesion</h2>
+            <div class="formcontato-container">
+                <input type="email" placeholder="Escriba su email de usuario" class="inicio_sesion_contenedor_usuario input" required data-tipo="email">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formcontato-container">
+                <input type="password" placeholder="Escriba su clave" class="inicio_sesion_contenedor_contraseña input" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" data-tipo="clave">
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            
+            <button class="inicio_sesion_contenedor_boton banner_boton">Enviar</button>
+        </div>
+    </section>
+    <section class="quienes_somos">
+        <div class="quienes_somos_contenedor">
+            <div class="quienes_somos_subcontenedor">
+                <div class="quienes_somos_logo">
+                    <img src="imagenes/Logo.png" alt="">
+                </div>
+                <div class="quienes_somos_paginas">
+                    <ul class="quienes_somos_paginas_lista">
+                        <li class="quienes_somos_paginas_lista_items">Quienes somos</li>
+                        <li class="quienes_somos_paginas_lista_items">Politica de privacidad</li>
+                        <li class="quienes_somos_paginas_lista_items">Programa de fidelidad</li>
+                        <li class="quienes_somos_paginas_lista_items">Nuestros Aliados</li>
+                        <li class="quienes_somos_paginas_lista_items">Quiero ser franquiciado</li>
+                        <li class="quienes_somos_paginas_lista_items">Anuncie aqui</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quienes_somos_contacto">
+                <form class="formcontato__form" name="form" >
+                    <h3 class="quienes_somos_contacto_titulo">Hable con nosotros</h3>
+                    <div class="formcontato-container">
+                        <input type="text" placeholder="Nombre" class="quienes_somos_contacto_nombre input" required pattern="[\s\S]{2,50}" data-tipo="nombre">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="formcontato-container">
+                        <textarea class="quienes_somos_contacto_mensaje input" name="" id="" cols="30" rows="10" placeholder="Mensaje" required maxlength="300" minlength="1"  data-tipo="mensaje"></textarea>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <button type="submit" class="quienes_somos_contacto_boton banner_boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </div> 
+    </section>
+    <section class="quienes_somos_footer">
+        <p>Desarrollado por David Hernandez</p>
+        <p>2023</p>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

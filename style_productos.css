@@ -1,0 +1,37 @@
+.productos_starWars_todos{
+    padding: 2rem;
+    margin-bottom: -2.5rem;
+}
+
+.productos_starWars_todos_titulo{
+    color: #1c1c1c;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+    .productos_starWars_todos{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1241px) {
+
+    .productos_starWars_todos_titulo{
+        font-size: 32px;
+    }
+
+    .productos_starWars_todos{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .banner_boton{
+        margin-top: 2rem;
+    }
+}
+

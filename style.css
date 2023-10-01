@@ -1,0 +1,357 @@
+body{
+    background-color: #EAF2FD;
+    margin: 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    list-style: none;
+}
+
+/*Header*/
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+}
+
+.logo{
+    width: 6.25rem;
+    height: 1.75rem;
+    margin-top: 0.5rem
+}
+
+.button-loggin{
+    width: 9rem;
+    height: 2.5rem;
+    margin: 0 0.5rem;
+    background-color: white;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+.search{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.75rem;    
+}
+
+/*Banner*/
+
+.banner{
+    background-image: url(imagenes/banner.png);
+    padding: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 12rem;
+}
+
+.banner_promocional{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.banner_productos{
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+}
+
+.banner_boton{
+    background-color: #2A7AE4;
+    color: white;
+    width: 9rem;
+    height: 2.5rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+/*Productos*/
+
+.productos_starWars_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: -1rem;
+    margin-bottom: -4rem
+}
+
+.productos_starWars_titulo{
+    font-size: 22px;
+    color: #464646;
+}
+
+.productos_starWars_verTodos{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 14px;
+}
+
+.productos_starWars_Productos{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.productos_starWars_Productos_elemento{
+    width: 46%;
+}
+
+.productos_starWars_Productos_lista{
+    margin-top: 1rem;
+}
+
+.productos_starWars_Productos_imgagen{
+    width: 9.75rem;
+    height: 10.875rem;
+}
+
+.productos_starWars_Productos_Descripcion{
+    color: #464646;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.productos_starWars_Productos_Precio{
+    color: #464646;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.productos_starWars_Productos_VerProducto{
+    color: #2A7AE4;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.quienes_somos{
+    padding: 1rem;
+}
+
+.quienes_somos_logo{
+    display: flex;
+    justify-content: center;
+}
+
+.quienes_somos_paginas{
+    display: flex;
+    justify-content: center;
+}
+
+.quienes_somos_paginas_lista{
+    list-style: none;
+}
+
+.quienes_somos_paginas_lista_items{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+    color: #464646;
+}
+
+.quienes_somos_contacto_titulo{
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #464646;
+}
+
+.input{
+    width: 90%;
+    border-radius: 4px;
+    border: 1px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.quienes_somos_contacto_mensaje{
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px;
+    padding: 1rem;
+}
+
+.quienes_somos_contacto_boton{
+    margin-top: 1rem;
+}
+
+.quienes_somos_footer{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+    color: #464646;
+    background-color: white;
+    padding: 1rem;
+}
+
+.ocultar{
+    display: none;
+}
+
+/* input error */
+
+/*input__error*/ 
+
+
+
+
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container--invalid .formcontato__input{
+    border: 2px solid #df2525;;
+    border-radius: 7px;
+  }
+
+  .input-container--invalid .formcontato__textarea{
+    border: 2px solid #df2525;;
+    border-radius: 7px;
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .input-container--invalid .input-message-error {
+    color: #df2525;;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1240px) {
+
+    /*Banner*/
+
+    .banner{
+        height: 22rem;
+    }
+
+    .banner_promocional{
+        margin-top: 15%;
+        font-size: 52px;
+    }
+
+    .banner_productos{
+        font-size: 22px;
+    }
+
+    /*Productos*/
+
+    .productos_starWars{
+        padding: 2rem;
+    }
+
+    .productos_starWars_Productos{
+        margin-left: 1.5rem;
+    }
+    .productos_starWars_Productos_elemento{
+        width: 25%;
+    }
+
+    /*Quienes Somos*/
+
+    .quienes_somos_contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .quienes_somos_contacto{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1241px)  {
+
+    .ocultar{
+        display: block;
+    }
+
+    .banner{
+        padding: 1rem 2rem;
+        height: 22rem;
+    }
+
+    .banner_promocional{
+        font-size: 52px;
+    }
+
+    .banner_productos{
+        font-size: 22px;
+    }
+
+    .banner_boton{
+        width: 11rem;
+        height: 3.25rem;
+        font-size: 16px;
+    }
+
+    .productos_starWars_content{
+        padding: 1rem 4rem;
+    }
+    
+    .productos_starWars{
+        padding: 2rem 4rem;
+    }
+
+    .productos_starWars_Productos_elemento{
+        width: 16%;
+    }
+
+    .quienes_somos_contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .quienes_somos_subcontenedor{
+        display: flex
+
+    }
+
+    .quienes_somos_logo{
+        width: 11rem;
+        height: 3.25rem;
+        padding: 1rem 0;
+    }
+
+    .quienes_somos_contacto{
+        width: 50%;
+    }
+    
+    .quienes_somos_paginas_lista_items{
+        font-size: 22px;
+    }
+
+    .quienes_somos_contacto_titulo{
+        font-size: 20px;
+    }
+
+    .quienes_somos_footer{
+        font-size: 22px;
+    }
+}
